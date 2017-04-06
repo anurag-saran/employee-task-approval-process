@@ -28,15 +28,15 @@ echo "kaviitha=d0f9e8fd2ffa6504b7b96db34a139262" > configuration/application-use
 echo "satish=d0f9e8fd2ffa6504b7b96db34a139262" >> configuration/application-users.properties
 echo "josh=d0f9e8fd2ffa6504b7b96db34a139262" >> configuration/application-users.properties
 echo "justin=d0f9e8fd2ffa6504b7b96db34a139262" >> configuration/application-users.properties
-echo "ram=d0f9e8fd2ffa6504b7b96db34a139262" >> configuration/application-users.properties
+echo "anurag=d0f9e8fd2ffa6504b7b96db34a139262" >> configuration/application-users.properties
 echo "joe=d0f9e8fd2ffa6504b7b96db34a139262" >> configuration/application-users.properties
 # Password = pass@123 
-echo "user1=kie-server,agent" > configuration/application-roles.properties
-echo "user10=kie-server,agent" >> configuration/application-roles.properties
-echo "user11=kie-server,agent" >> configuration/application-roles.properties
-echo "user2=kie-server,reviewer" >> configuration/application-roles.properties
-echo "user21=kie-server,reviewer" >> configuration/application-roles.properties
-echo "user22=kie-server,reviewer" >> configuration/application-roles.properties
+echo "kaviitha=kie-server,agent" > configuration/application-roles.properties
+echo "satish=kie-server,agent" >> configuration/application-roles.properties
+echo "josh=kie-server,agent" >> configuration/application-roles.properties
+echo "justin=kie-server,reviewer" >> configuration/application-roles.properties
+echo "anurag=kie-server,reviewer,admin" >> configuration/application-roles.properties
+echo "joe=kie-server,reviewer" >> configuration/application-roles.properties
 
 
 
