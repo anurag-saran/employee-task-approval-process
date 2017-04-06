@@ -48,8 +48,18 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
+					myInputs[i] = document.getElementById("cost");
+					i++;
+
 
 		var j=0;
+						if(notEmpty(myInputs[j]) && !isNumeric(myInputs[j])) {
+							alert("Please enter valid cost");
+							myInputs[j].focus();
+							return false;
+						}
+					j++;
+
 		return true;
 	}
 </script>
@@ -200,36 +210,18 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: employeeApprovalProcess.Approver
+		New Process Instance: /employee-task-approval/src/main/resources/com/acme/empexpenses/employee_task_approval.employeerequest-process
 	</div>
 	<div id="content">
-	    <input type="hidden" name="taskId" value="${task.id}"/>
+	    <input type="hidden" name="processId" value="${process.id}"/>
 		<fieldset>
-            <legend>Task Info</legend>
-            	<label for="name">Owners</label>
-            	<div class="div_checkbox">
-            	
-            	</div>
-            	<label for="name">Actor ID</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Group</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Skippable</label>
-            	<div class="div_checkbox">true</div>
-            	<label for="name">Priority</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Comment</label>
-            	<div class="div_checkbox"></div>
-            <div class="clear"></div>
-          </fieldset>
+            <legend>Process inputs</legend>
+                            		<label for="name">cost</label>
+                            		<div class="div_texbox">
+                              		<input name="cost" type="text" class="textbox" id="cost" value="" />
+                            		</div>
+              	
 
-		<fieldset>
-            <legend>Task Inputs</legend>
-            <div class="clear"></div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Task Outputs</legend>
           </fieldset>
 	</div>
 	<div id="footer">
