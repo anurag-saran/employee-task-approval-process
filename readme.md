@@ -52,8 +52,44 @@ oc new-app --template=processserver63-mysql-persistent-s2i -p APPLICATION_NAME=$
 * export policyquote_app=<URL of the policyquote app route>
 * cd /Users/anuragsaran/Documents/MW/summit2017/bxms-advanced-infrastructure-lab/xpaas/process-server
 
-export policyquote_app=http://taskapproval-employee-task-approval-process.apps.anuragsdemo.com/
+```
+export policyquote_app=taskapproval-employee-task-approval-process.apps.anuragsdemo.com
 export kieserver_password=kieserver1!
-curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$policyquote_app/kie-server/services/rest/server"
-curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$policyquote_app/kie-server/services/rest/server/containers"
+```
+
+Check the health of the Process Server:
+```
+curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$emprequest_app/kie-server/services/rest/server"
+```
+
+Check which containers are deployed on the server:
+```
+curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$emprequest_app/kie-server/services/rest/server/containers"
+```
+
+Start a process
+```
+curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" --user kieserver:$kieserver_password -d @empreq-start-process-payload.json "$emprequest_app/kie-server/services/rest/server/containers/employee-task-approval/processes/employee-task-approval.employeerequest-process/instances"
+```
+
+Check that the process instance is running:
+```
+curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$emprequest_app/kie-server/services/rest/server/queries/containers/employee-task-approval/process/instances"
+```
+
+Query for the tasks that have anurag as potential owner:
+```
+curl -X GET -H "Accept: application/json" --user anurag:pass@123 "$emprequest_app/kie-server/services/rest/server/queries/tasks/instances/pot-owners"
+```
+
+As anurag, start the task:
+```
+curl -X PUT -H "Accept: application/json" --user anurag:pass@123 "$emprequest_app/kie-server/services/rest/server/containers/employee-task-approval/tasks/1/states/started"
+```
+
+Again as anurag, complete the task specifying the policy price as payload of this call, using the task_price task output variable:
+```
+curl -X PUT -H "Accept: application/json" --user anurag:pass@123 -d '{ "task_cost" : 600 }' "$emprequest_app/kie-server/services/rest/server/containers/employee-task-approval/tasks/1/states/completed"
+```
+
 
