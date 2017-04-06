@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.acme.empexpenses</groupId>
   <artifactId>employee-task-approval</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.5</version>
   <packaging>kjar</packaging>
   <name>employee-task-approval</name>
    
