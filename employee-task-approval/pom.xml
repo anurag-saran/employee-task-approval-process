@@ -7,9 +7,31 @@
   <version>1.0.5</version>
   <packaging>kjar</packaging>
   <name>employee-task-approval</name>
-  <build>
-    <plugins>
-      <plugin>
+   
+  	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<drools.version>6.3.0.Final-redhat-9</drools.version>
+		<jbpm.version>6.3.0.Final-redhat-9</jbpm.version>
+	</properties>
+    
+  <dependencies>
+<!-- add this dependency if there are Model Classes present (created by Data Modeler in the business-central) -->
+        <dependency>
+            <groupId>org.kie</groupId>
+            <artifactId>kie-api</artifactId>
+            <version>${drools.version}</version>
+   </dependency>
+</dependencies>
+ <build>
+        <plugins>
+            <plugin>
+                <groupId>org.kie</groupId>
+                <artifactId>kie-maven-plugin</artifactId>
+                <version>${jbpm.version}</version>
+                <extensions>true</extensions>
+   
+            </plugin>
+	    <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
         <version>6.4.0.Final-redhat-3</version>
@@ -22,6 +44,22 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-    </plugins>
-  </build>
+
+        </plugins>
+    </build>
+  <repositories>
+    <repository>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+	<releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>daily</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 </project>
