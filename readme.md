@@ -56,3 +56,4 @@ export policyquote_app=http://taskapproval-employee-task-approval-process.apps.a
 export kieserver_password=kieserver1!
 curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$policyquote_app/kie-server/services/rest/server"
 curl -X GET -H "Accept: application/json" --user kieserver:$kieserver_password "$policyquote_app/kie-server/services/rest/server/containers"
+
