@@ -48,19 +48,8 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("task_amount");
-					i++;
-
 
 		var j=0;
-						if(notEmpty(myInputs[j]) && !isNumeric(myInputs[j])) {
-							alert("Please enter valid task_amount");
-							myInputs[j].focus();
-							return false;
-						}
-			
-					j++;
-
 		return true;
 	}
 </script>
@@ -211,7 +200,7 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: empReqApprovalProcess.SetRequest
+		User Task Form: employeeApprovalProcess.Approver
 	</div>
 	<div id="content">
 	    <input type="hidden" name="taskId" value="${task.id}"/>
@@ -224,7 +213,7 @@
             	<label for="name">Actor ID</label>
             	<div class="div_checkbox"></div>
             	<label for="name">Group</label>
-            	<div class="div_checkbox"><![CDATA[admin]]></div>
+            	<div class="div_checkbox"></div>
             	<label for="name">Skippable</label>
             	<div class="div_checkbox">true</div>
             	<label for="name">Priority</label>
@@ -236,30 +225,11 @@
 
 		<fieldset>
             <legend>Task Inputs</legend>
-                            		<label for="name">task_amount</label>
-                            		<div class="div_checkbox">
-                              		<![CDATA[#{request.amount}]]>
-                            		</div>
-                            		<label for="name">task_req</label>
-                            		<div class="div_checkbox">
-                              		${task_req}
-                            		</div>
-                            		<label for="name">task_emp</label>
-                            		<div class="div_checkbox">
-                              		${task_emp}
-                            		</div>
-
             <div class="clear"></div>
           </fieldset>
 
           <fieldset>
             <legend>Task Outputs</legend>
-                            		<label for="name">task_amount</label>
-                            		<div class="div_texbox">
-                              		<input name="task_amount" type="text" class="textbox" id="task_amount" value="${task_amount}" />
-                            		</div>
-              	
-
           </fieldset>
 	</div>
 	<div id="footer">
