@@ -53,7 +53,7 @@ oc new-app --template=processserver63-mysql-persistent-s2i -p APPLICATION_NAME=$
 * cd /Users/anuragsaran/Documents/MW/summit2017/employee-task-approval-process/employee-task-approval/configuration
 
 ```
-export policyquote_app=taskapproval-employee-task-approval-process.apps.anuragsdemo.com
+export policyquote_app=taskapproval-dev-env.apps.anuragsdemo.com
 export kieserver_password=kieserver1!
 ```
 
