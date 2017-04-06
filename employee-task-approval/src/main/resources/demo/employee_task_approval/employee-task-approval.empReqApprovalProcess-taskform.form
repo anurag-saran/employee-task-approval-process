@@ -1,9 +1,65 @@
 
-<form id="1465753508">
+<form id="1082834402">
 <property name="name" value="employee-task-approval.empReqApprovalProcess-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="amount" type="InputTextInteger" id="759650616">
+<field position="5" name="request_amount" type="InputTextInteger" id="1917650684">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;amount (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/amount"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="emp_empDesignation" type="InputText" id="1860195634">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empDesignation (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="emp/empDesignation"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="request_name" type="InputText" id="1129639607">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="emp_empDep" type="InputText" id="272289967">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empDep (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="emp/empDep"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="emp_empId" type="InputText" id="803602752">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empId (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="emp/empId"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="emp_empName" type="InputText" id="1804548390">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empName (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="emp/empName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="request_appPriority" type="InputText" id="1193915909">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;appPriority (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/appPriority"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="request_reason" type="InputText" id="2037940596">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;reason (request)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="request/reason"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="amount" type="InputTextInteger" id="1157777804">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;amount (amount)quot;"/>
 <property name="readonly" value="false"/>
@@ -12,4 +68,5 @@
 </field>
 <dataHolder inputId="" name="#BBBBBB" type="basicType" outId="amount" value="java.lang.Integer" id="amount"/>
 <dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="emp" value="demo.employee_task_approval.EmpDO" id="emp"/>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="request" value="demo.employee_task_approval.RequestDO" id="request"/>
 </form>

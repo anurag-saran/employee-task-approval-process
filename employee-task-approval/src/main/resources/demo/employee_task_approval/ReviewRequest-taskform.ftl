@@ -224,7 +224,7 @@
             	<label for="name">Actor ID</label>
             	<div class="div_checkbox"></div>
             	<label for="name">Group</label>
-            	<div class="div_checkbox"><![CDATA[manager]]></div>
+            	<div class="div_checkbox"><![CDATA[admin]]></div>
             	<label for="name">Skippable</label>
             	<div class="div_checkbox">true</div>
             	<label for="name">Priority</label>
@@ -236,13 +236,9 @@
 
 		<fieldset>
             <legend>Task Inputs</legend>
-                            		<label for="name">task_app</label>
+                            		<label for="name">task_req</label>
                             		<div class="div_checkbox">
-                              		${task_app}
-                            		</div>
-                            		<label for="name">task_emp</label>
-                            		<div class="div_checkbox">
-                              		${task_emp}
+                              		${task_req}
                             		</div>
                             		<label for="name">task_amount</label>
                             		<div class="div_checkbox">

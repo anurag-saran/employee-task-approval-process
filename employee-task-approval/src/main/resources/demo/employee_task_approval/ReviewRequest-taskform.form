@@ -1,9 +1,23 @@
 
-<form id="1146089149">
+<form id="1313873749">
 <property name="name" value="ReviewRequest-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="amount" type="InputTextInteger" id="411800047">
+<field position="2" name="emp_empDesignation" type="InputText" id="103026181">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empDesignation (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="task_req/empDesignation"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="emp_empDep" type="InputText" id="1432474359">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empDep (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="task_req/empDep"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="amount" type="InputTextInteger" id="1988504079">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;task_amount (amount)quot;"/>
 <property name="readonly" value="false"/>
@@ -11,6 +25,20 @@
 <property name="outputBinding" value="task_amount"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
+<field position="3" name="emp_empId" type="InputText" id="1727531778">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empId (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="task_req/empId"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="emp_empName" type="InputText" id="70238836">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empName (emp)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="task_req/empName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <dataHolder inputId="task_amount" name="#BBBBBB" type="basicType" outId="task_amount" value="java.lang.Integer" id="amount"/>
-<dataHolder inputId="task_emp" name="#FF54A7" type="dataModelerEntry" outId="" value="demo.employee_task_approval.EmpDO" id="emp"/>
+<dataHolder inputId="task_req" name="#FF54A7" type="dataModelerEntry" outId="" value="demo.employee_task_approval.EmpDO" id="emp"/>
 </form>
