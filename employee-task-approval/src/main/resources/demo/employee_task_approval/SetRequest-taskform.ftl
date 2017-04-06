@@ -236,16 +236,17 @@
 
 		<fieldset>
             <legend>Task Inputs</legend>
-                            		<label for="name">task_approval</label>
+                            		<label for="name">task_amount</label>
                             		<div class="div_checkbox">
+                              		<![CDATA[#{approval.amount}]]>
+                            		</div>
+                            		<label for="name">task_req</label>
+                            		<div class="div_checkbox">
+                              		${task_req}
                             		</div>
                             		<label for="name">task_emp</label>
                             		<div class="div_checkbox">
                               		${task_emp}
-                            		</div>
-                            		<label for="name">task_amount</label>
-                            		<div class="div_checkbox">
-                              		<![CDATA[#{approval.amount}]]>
                             		</div>
 
             <div class="clear"></div>
