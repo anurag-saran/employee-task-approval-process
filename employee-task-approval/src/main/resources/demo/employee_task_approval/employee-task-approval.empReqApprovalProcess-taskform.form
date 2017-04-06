@@ -1,0 +1,15 @@
+
+<form id="1465753508">
+<property name="name" value="employee-task-approval.empReqApprovalProcess-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="amount" type="InputTextInteger" id="759650616">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;amount (amount)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="amount"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="amount" value="java.lang.Integer" id="amount"/>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="emp" value="demo.employee_task_approval.EmpDO" id="emp"/>
+</form>

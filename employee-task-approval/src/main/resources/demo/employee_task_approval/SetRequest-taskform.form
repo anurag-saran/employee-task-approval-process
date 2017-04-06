@@ -1,0 +1,15 @@
+
+<form id="1905645199">
+<property name="name" value="SetRequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="amount" type="InputTextInteger" id="143404228">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;task_price (amount)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="task_price"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="task_price" value="java.lang.Integer" id="amount"/>
+<dataHolder inputId="task_emp" name="#FF54A7" type="dataModelerEntry" outId="" value="demo.employee_task_approval.EmpDO" id="emp"/>
+</form>

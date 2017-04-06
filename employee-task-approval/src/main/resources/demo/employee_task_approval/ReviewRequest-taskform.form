@@ -1,0 +1,16 @@
+
+<form id="1146089149">
+<property name="name" value="ReviewRequest-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="amount" type="InputTextInteger" id="411800047">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;task_amount (amount)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="task_amount"/>
+<property name="outputBinding" value="task_amount"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="task_amount" name="#BBBBBB" type="basicType" outId="task_amount" value="java.lang.Integer" id="amount"/>
+<dataHolder inputId="task_emp" name="#FF54A7" type="dataModelerEntry" outId="" value="demo.employee_task_approval.EmpDO" id="emp"/>
+</form>
