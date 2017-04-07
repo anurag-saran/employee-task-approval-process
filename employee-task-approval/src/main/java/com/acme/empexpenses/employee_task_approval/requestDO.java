@@ -9,14 +9,16 @@ public class requestDO implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "reqID")
+   @org.kie.api.definition.type.Label("reqID")
    private java.lang.String reqID;
-   @org.kie.api.definition.type.Label(value = "reqDetail")
+   @org.kie.api.definition.type.Label("reqDetail")
    private java.lang.String reqDetail;
-   @org.kie.api.definition.type.Label(value = "cost")
+   @org.kie.api.definition.type.Label("cost")
    private java.lang.Integer cost;
-   @org.kie.api.definition.type.Label(value = "priority")
+   @org.kie.api.definition.type.Label("priority")
    private java.lang.Integer priority;
+
+   private java.lang.Boolean approved;
 
    public requestDO()
    {
@@ -62,13 +64,25 @@ public class requestDO implements java.io.Serializable
       this.priority = priority;
    }
 
+   public java.lang.Boolean getApproved()
+   {
+      return this.approved;
+   }
+
+   public void setApproved(java.lang.Boolean approved)
+   {
+      this.approved = approved;
+   }
+
    public requestDO(java.lang.String reqID, java.lang.String reqDetail,
-         java.lang.Integer cost, java.lang.Integer priority)
+         java.lang.Integer cost, java.lang.Integer priority,
+         java.lang.Boolean approved)
    {
       this.reqID = reqID;
       this.reqDetail = reqDetail;
       this.cost = cost;
       this.priority = priority;
+      this.approved = approved;
    }
 
 }
