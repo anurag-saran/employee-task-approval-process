@@ -88,7 +88,7 @@
       <bpmn2:dataInputAssociation id="_IL0SShuyEee5ZutMMqBs7A">
         <bpmn2:targetRef>_786094C7-634A-4374-8D03-88D86B2B0C6C_GroupIdInputX</bpmn2:targetRef>
         <bpmn2:assignment id="_IL0SSxuyEee5ZutMMqBs7A">
-          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IL0STBuyEee5ZutMMqBs7A"><![CDATA[agent]]></bpmn2:from>
+          <bpmn2:from xsi:type="bpmn2:tFormalExpression" id="_IL0STBuyEee5ZutMMqBs7A"><![CDATA[manager]]></bpmn2:from>
           <bpmn2:to xsi:type="bpmn2:tFormalExpression" id="_IL0STRuyEee5ZutMMqBs7A">_786094C7-634A-4374-8D03-88D86B2B0C6C_GroupIdInputX</bpmn2:to>
         </bpmn2:assignment>
       </bpmn2:dataInputAssociation>
